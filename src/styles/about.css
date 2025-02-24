@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px;
+    gap: 70px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Imagen a un lado */
+.about-image {
+    width: 50%;
+    height: 350px;
+    background-image: url("../assets/img/logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sección del texto */
+.about-text {
+    width: 50%;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Fondo general */
+.about-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wallpaperaccess.com/full/2795.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+/* Título */
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Cinzel", serif;
+    margin-bottom: 20px;
+}
+
+/* Párrafos */
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Estilo especial */
+.highlight {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Llamado a la acción */
+.about-cta {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}

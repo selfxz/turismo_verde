@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+/* Contenedor principal */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Sección de la imagen */
+.image-section {
+  width: 100%;
+  height: 80vh;
+  background-image: url("https://wallpaperaccess.com/full/2795.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Fondo oscuro para mejorar visibilidad del texto */
+.image-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+}
+
+/* Contenedor del eslogan y botón */
+.slogan-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilo del eslogan */
+.home-slogan {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  font-family: "Cinzel", serif;
+  letter-spacing: 6px;
+}
+
+/* Botón de about */
+.about-button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+.about-button:hover {
+  background: white;
+  color: black;
+}
