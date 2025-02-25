@@ -8,18 +8,17 @@ import Contact from "./pages/Contact";
 
 function App() {
   useEffect(() => {
-    // Verifica si el script ya está cargado
+
     if (!window.watsonAssistantChatOptions) {
       window.watsonAssistantChatOptions = {
-        integrationID: "d1654bdb-b8ba-48e6-add3-e170af5ed583", // Reemplaza con tu Integration ID
-        region: "au-syd", // Reemplaza con tu región
-        serviceInstanceID: "50228bd7-591e-4d77-b684-e9ba80a0d4f1", // Reemplaza con tu Service Instance ID
+        integrationID: "d1654bdb-b8ba-48e6-add3-e170af5ed583",
+        region: "au-syd",
+        serviceInstanceID: "50228bd7-591e-4d77-b684-e9ba80a0d4f1",
         onLoad: async (instance) => {
-          await instance.render(); // Renderiza el widget flotante
+          await instance.render();
         },
       };
 
-      // Cargar el script de Watson Assistant
       const script = document.createElement("script");
       script.src =
         "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
